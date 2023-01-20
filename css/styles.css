@@ -30,6 +30,7 @@
     --brand-color-portfolio-central-border:1px solid #EEEEEE;
     --portfolio-central-images-list-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --main-bottom-list-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --brand-color-svg:#757575;
     
 }
 body {
@@ -134,7 +135,10 @@ h1, h2, h3, p {
     margin-right: 10px;
     cursor: pointer;
     
+    
+
 }
+
 .icons-svg-header-phone {
     width:10px;
     height:16px;
@@ -142,18 +146,53 @@ h1, h2, h3, p {
     cursor: pointer;
     
 }
-.header-link-contact:hover, .header-link-contact:focus-within {
-    --color4: var(--brand-color-hover);
-}
+
  .header-link-contact:hover a, .header-link-contact:focus-within a {
      color: var(--brand-color-hover);
    
 }
+
+.testul{
+
+}
+.testul:hover{
+    
+}
+.testli{
+
+}
+.testli:hover{
+
+}
+.testsvg{
+    
+}
+
+.testsvg:hover{
+    
+}
+.testa{
+transition-property: fill, color;
+    transition-duration: 500ms, 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), linear;
+}
+.testa:hover, .testa:focus{
+    fill: #2196F3;
+        color: #2196F3;
+}
+
+
+
+
+
+
 /*.icons-svg-header-mail:hover, .icons-svg-header-phone:hover, .icons-svg-header-mail:focus, .icons-svg-header-phone:focus{
 filter: var(--brand-color-hover-filter);
 }
 */
 .mail-header {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -162,6 +201,8 @@ filter: var(--brand-color-hover-filter);
     color: var(--brand-color-contact-header);
 }
 .tel-header {
+        display: flex;
+        align-items: center;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.1428;
@@ -170,13 +211,15 @@ filter: var(--brand-color-hover-filter);
         color: var(--brand-color-contact-header);
 }
 .link-active-color{
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--brand-color-svg);
+    transition-property: color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
         
 }
-.link-active-color:hover, .link-active-color:focus {
+.link-active-color:hover, .link-active-color:focus-within {
     color: var(--brand-color-hover);
+    fill: var(--brand-color-hover);
 }
 
 .active-page-color-highlighting {
