@@ -31,7 +31,7 @@
     --portfolio-central-images-list-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --main-bottom-list-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --brand-color-svg:#757575;
-    
+    --brand-color-svg-clients:#afb1b8;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -512,7 +512,15 @@ letter-spacing: 0.03em;
 .main-bottom-list-container-list {
     display: flex;
 }
-
+.main-bottom-list-container-link{
+    fill: var(--brand-color-footer-icons-background);
+        transition-property: color, fill;
+        transition-duration: 250ms, 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-bottom-list-container-link:hover, .main-bottom-list-container-link:focus{
+    fill:var(--brand-color-hover);
+}
 .main-bottom-list-container-icon {
     width: 44px;
     height: 44px;
@@ -523,7 +531,7 @@ letter-spacing: 0.03em;
 .main-bottom-list-container-list:hover,
 .main-bottom-list-container-list:focus-within {
     --color3: var(--brand-color-background-overall);
-    --color5: var(--brand-color-hover);
+    
 }
 
 .main-bottom-team {
@@ -551,10 +559,14 @@ letter-spacing: 0.03em;
 
 .main-bottom-team-link {
     display: flex;
-
-
+    fill: var(--brand-color-svg-clients);
+        transition-property: color, fill;
+        transition-duration: 250ms, 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.main-bottom-team-link:hover, .main-bottom-team-link:focus{
+    fill: var(--brand-color-hover);
+}
 .main-bottom-team-icon {
     padding-left: 32px;
     padding-right: 32px;
