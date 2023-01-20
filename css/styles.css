@@ -132,13 +132,14 @@ h1, h2, h3, p {
     width:16px;
     height:12px;
     margin-right: 10px;
-    cursor: pointer
+    cursor: pointer;
+    
 }
 .icons-svg-header-phone {
     width:10px;
     height:16px;
     margin-right: 10px;
-    cursor: pointer
+    cursor: pointer;
     
 }
 .header-link-contact:hover, .header-link-contact:focus-within {
@@ -169,7 +170,6 @@ filter: var(--brand-color-hover-filter);
         color: var(--brand-color-contact-header);
 }
 .link-active-color{
-    color: var(--brand-color-font-overall);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
