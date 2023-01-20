@@ -168,7 +168,13 @@ filter: var(--brand-color-hover-filter);
         text-decoration: none;
         color: var(--brand-color-contact-header);
 }
-
+.link-active-color{
+    color: var(--brand-color-font-overall);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+}
 .link-active-color:hover, .link-active-color:focus {
     color: var(--brand-color-hover);
 }
@@ -245,6 +251,7 @@ filter: var(--brand-color-hover-filter);
     display: flex;
     --color5: var(--brand-color-footer-icons-background);
     --color3: var(--brand-color-background-overall);
+    
 }
 
 .main-footer-list-box-icon {
