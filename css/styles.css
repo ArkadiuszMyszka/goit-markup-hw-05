@@ -34,7 +34,7 @@
     --brand-color-svg:#757575;
     --brand-color-svg-clients:#afb1b8;
     --color-main-central-img-text:rgba(47, 48, 58, 0.8);
-
+    --brand-color-portfolio-central-overlay:#2196F3;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -688,15 +688,63 @@ object-fit: contain;
 }
 
 .portfolio-central-images-list{
+    
     flex-basis: calc((100% - 2 * 30px) / 3);
     max-width: 370px;
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
 }
 .portfolio-central-images-list:hover, .portfolio-central-images-list:focus{
     box-shadow: var(--portfolio-central-images-list-box-shadow);
+     
+}
+.portfolio-central-images-list:hover .portfolio-central-images-list-figure-article{
+    
+    transform:translateY(0%)
+}
+.portfolio-central-images-list-figure-box{
+    width: 370px;
+    height: 294px;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.portfolio-central-images-list-figure-article{
+    display: flex;
+    width: 370px;
+    height:294px;
+    background-color: var(--brand-color-portfolio-central-overlay);
+    transform:translateY(101%);
+    transition-property: box-shadow transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    }
+.portfolio-central-images-list-figure-article-text{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: 0.03em;
+    color:var(--brand-color-font-overall-2);
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    height: 100%;
+    line-height: 28px
+    
+
+}
+.portfolio-central-images-list-figure{
+    position: relative;
+}
+.portfolio-central-images-list-figcaption{
+    
 }
 .portfolio-central figure {
     display: flex;
@@ -719,7 +767,7 @@ object-fit: contain;
     margin-bottom: 4px;
     
 }
-.portfolio-central p {
+.portfolio-central-images-list-text{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
