@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./css/modern-normalize.min.css" />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
-    <body>
+    <body class="body-box">
         <div class="header-box">
             <header class="header-main container">
                 <nav>
@@ -43,7 +43,7 @@
                         <h1 class="text-mainpage">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
                     </div>
                     <div class="button-mainpage-box">
-                        <button class="button-mainpage" type="button">Zamów usługe</button>
+                        <button data-modal-open class="button-mainpage" type="button">Zamów usługe</button>
                     </div>
                 </section>
             </div>
@@ -323,4 +323,12 @@
 
             </footer>
         </div>
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal ">
+                <button data-modal-close class="button-modal-close" type="button"><svg class="button-modal-close-svg"><use href="./images/icons.svg#icon-cross"></use></svg></button>
+            </div>
+        </div>
+
+        <script src="./js/modal.js"></script>
     </body>
